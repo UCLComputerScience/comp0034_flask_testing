@@ -1,23 +1,19 @@
 """
 Contains tests for the auth blueprint
 """
-from tests.pytest_tests.conftest import login
+from test.pytest_test.conftest import login
 
 
 def test_login_fails_with_invalid_username(test_client, app):
-    with app.test_request_context():
-        response = login(test_client, username="John", password='Fred')
-        assert 'Invalid username or password' in response.get_data(as_text=True)
-        # assert b'Invalid username or password' in response.data
+    response = login(test_client, email="john@john.com", password='Fred')
+    assert b'Invalid username or password' in response.data
 
 
 def test_login_success_with_valid_user(test_client, user):
-    """ Tests if the login form works when the user exists and details are valid """
-    with test_client:
-        response = test_client.post('/login/', data=dict(
-            email=user.email,
-            password=user.password
-        ), follow_redirects=True)
+    response = test_client.post('/login/', data=dict(
+        email=user.email,
+        password=user.password
+    ), follow_redirects=True)
     assert response.status_code == 200
 
 

@@ -40,7 +40,7 @@ def user(test_client, db):
     """ Creates a student user. """
     from cscourses.models import Student
     user = Student(name='Another Person', email='anotherperson@gmail.com', user_type='student', student_ref='cs987654')
-    user.set_password('cs987654')
+    user.set_password('another')
     db.session.add(user)
     db.session.commit()
     return user
@@ -78,8 +78,8 @@ def student_data():
     """ Provides the details for a student. """
     student_data = {
         "name": "Fred Blogs",
-        "title": None,
-        "role": "Student",
+        "title": "mr",
+        "role": "student",
         "uni_id": "cs123456",
         "email": "cs123456@ucl.ac.uk",
         "password": "test",
@@ -93,8 +93,8 @@ def teacher_data():
     """ Provides the details for a teacher. """
     teacher_data = {
         "name": "Jane Smith",
-        "title": "Dr",
-        "role": "Teacher",
+        "title": "dr",
+        "role": "teacher",
         "uni_id": "ct123456",
         "email": "ct123456@ucl.ac.uk",
         "password": "test",
@@ -104,9 +104,9 @@ def teacher_data():
 
 
 # Helper functions ( not fixtures) from https://flask.palletsprojects.com/en/1.1.x/testing/
-def login(client, username, password):
+def login(client, email, password):
     return client.post('/login/', data=dict(
-        username=username,
+        email=email,
         password=password
     ), follow_redirects=True)
 
