@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+    <h3>Profile details</h3>
+    <p>Name: {{ profile.name }}</p>
+    <p>Email address: {{ profile.email }}</p>
+    {% if type ==  "student" %}
+        <p>College identifier: {{ profile.student_ref }}</p>
+        <p>Account type: Student</p>
+    {% else %}
+        <p>College identifier: {{ profile.teacher_ref }}</p>
+        <p>Account type: Teacher</p>
+    {% endif %}
+{% endblock %}
