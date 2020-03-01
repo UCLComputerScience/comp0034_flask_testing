@@ -1,7 +1,7 @@
 """
 Contains tests for the auth blueprint
 """
-from test.pytest_test.conftest import login
+from test.pytest_tests.conftest import login
 
 
 def test_login_fails_with_invalid_username(test_client, app):

@@ -155,9 +155,4 @@ class TestModel(BaseTestCase):
 
 
 if __name__ == '__main__':
-    suite = unittest.TestSuite()
-    loader = unittest.TestLoader()
-    suite.addTests(loader.loadTestsFromTestCase(TestAuth))
-    suite.addTests(loader.loadTestsFromTestCase(TestMain))
-    suite.addTests(loader.loadTestsFromTestCase(TestModel))
-    unittest.TextTestRunner(verbosity=3).run(suite)
+    unittest.main()

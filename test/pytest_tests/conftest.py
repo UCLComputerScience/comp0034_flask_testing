@@ -103,7 +103,7 @@ def teacher_data():
     return teacher_data
 
 
-# Helper functions ( not fixtures) from https://flask.palletsprojects.com/en/1.1.x/testing/
+# Helper functions (not fixtures) from https://flask.palletsprojects.com/en/1.1.x/testing/
 def login(client, email, password):
     return client.post('/login/', data=dict(
         email=email,

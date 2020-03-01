@@ -3,7 +3,7 @@ Contains the functional tests for the main blueprint.
 """
 from flask_login import current_user
 
-from test.pytest_test.conftest import login
+from test.pytest_tests.conftest import login
 
 
 def test_index_page_valid(test_client):
