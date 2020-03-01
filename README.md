@@ -4,7 +4,7 @@ COMP0034 Code to accompany the lecture covering Flask testing
 ### Exercise 1: Unittest tests
 1. Open `test/backend_tests.py`
 2. Run the unittest tests and check all run
-3. Add a new test:
+3. Add a new test in `class TestMain(BaseTestCase):`:
     - GIVEN a Flask application
     - WHEN the ‘/view_profile' page is requested (GET) when the user is not logged in
     - THEN the user is redirected to the login page and the message ‘You must be logged in to view that page.’ is displayed
@@ -12,7 +12,7 @@ COMP0034 Code to accompany the lecture covering Flask testing
 ### Exercise 2: pytest tests
 1. Open the `test/pytest_tests` folder
 2. Run the pytest tests and check all run
-3. Add a new test:
+3. Add a new test in `test_main.py`:
     - GIVEN a Flask application
     - WHEN the ‘/view_profile' page is requested (GET) when the user is not logged in
     - THEN the user is redirected to the login page and the message ‘You must be logged in to view that page.’ is displayed

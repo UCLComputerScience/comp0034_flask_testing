@@ -31,3 +31,13 @@ def test_profile_displayed_when_user_logged_in(test_client, user):
     response = test_client.get('/view_profile/')
     assert response.status_code == 200
     assert b'Account type: Student' in response.data
+
+
+def test_view_profile_not_allowed_when_user_not_logged_in(self):
+        """
+        Exercise: Write a test for the following case
+        GIVEN a Flask application
+        WHEN the ‘/view_profile' page is requested (GET) when the user is not logged in
+        THEN the user is redirected to the login page and the message ‘You must be logged in to view that page.’ is displayed
+        """
+        pass

@@ -107,6 +107,15 @@ class TestMain(BaseTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Email address: cs1234567@ucl.ac.uk', response.data)
 
+    def test_view_profile_not_allowed_when_user_not_logged_in(self):
+        """
+        Exercise: Write a test for the following case
+        GIVEN a Flask application
+        WHEN the ‘/view_profile' page is requested (GET) when the user is not logged in
+        THEN the user is redirected to the login page and the message ‘You must be logged in to view that page.’ is displayed
+        """
+        pass
+
 
 class TestAuth(BaseTestCase):
 
