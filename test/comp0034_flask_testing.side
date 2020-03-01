@@ -1,0 +1,209 @@
+{
+  "id": "1929e761-1661-41fd-ae9e-e4c8f0652aa4",
+  "version": "2.0",
+  "name": "comp0034_flask_testing",
+  "url": "http://127.0.0.1:5000",
+  "tests": [{
+    "id": "2b698339-7fd9-4354-a0ec-3269b64a6f3c",
+    "name": "test_signup",
+    "commands": [{
+      "id": "fd956405-ef89-47f2-83e4-b92f6d72fbfc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8acce557-1253-4466-85ba-e3ec68e178d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1305x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ca2eee4-b322-41ad-a6f8-38eb73f2b70f",
+      "comment": "",
+      "command": "click",
+      "target": "id=signup-link",
+      "targets": [
+        ["id=signup-link", "id"],
+        ["linkText=Sign up", "linkText"],
+        ["css=#signup-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[@id='signup-link']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/signup/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03938f9c-fd73-4c1d-9faf-5e49e682c606",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2ee976-321e-4a78-84b6-e0f2ce308587",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "John Crag"
+    }, {
+      "id": "1f28e94a-b197-4385-9dcf-14d5e6ffc688",
+      "comment": "",
+      "command": "click",
+      "target": "id=uni_id",
+      "targets": [
+        ["id=uni_id", "id"],
+        ["name=uni_id", "name"],
+        ["css=#uni_id", "css:finder"],
+        ["xpath=//input[@id='uni_id']", "xpath:attributes"],
+        ["xpath=//dd[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9ac29cc-76fb-4537-aca8-b307bf4d43b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=uni_id",
+      "targets": [
+        ["id=uni_id", "id"],
+        ["name=uni_id", "name"],
+        ["css=#uni_id", "css:finder"],
+        ["xpath=//input[@id='uni_id']", "xpath:attributes"],
+        ["xpath=//dd[4]/input", "xpath:position"]
+      ],
+      "value": "CS123499"
+    }, {
+      "id": "b1e9bba7-d9fc-470b-91df-29abbec615d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//dd[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d65a52-6f16-484d-92da-383d24f42c33",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//dd[5]/input", "xpath:position"]
+      ],
+      "value": "CS123499@ucl.ac.uk"
+    }, {
+      "id": "32e5061a-f8fa-4bf1-898e-6d8a9bbf1ce1",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//dd[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88210ff4-1131-41b9-9862-96bd5b024376",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//dd[6]/input", "xpath:position"]
+      ],
+      "value": "CS123499"
+    }, {
+      "id": "b071b7f7-1595-4de3-a24f-5637964fadd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["name=confirm", "name"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//input[@id='confirm']", "xpath:attributes"],
+        ["xpath=//dd[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd48ae51-c61d-44a1-ae56-d5ae9dc2394f",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["name=confirm", "name"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//input[@id='confirm']", "xpath:attributes"],
+        ["xpath=//dd[7]/input", "xpath:position"]
+      ],
+      "value": "CS123499"
+    }, {
+      "id": "d9f8f40f-ac00-40cf-aa98-e708f665e886",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd875cff-1d04-484b-a335-ab159deb660e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=h1",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "4c663015-395d-439c-8f79-b96b7680903e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Welcome John Crag"
+    }, {
+      "id": "237cab20-47e0-453a-9b26-c44623df7f51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ec4761ee-3cd0-4192-b16e-c5359e988d1f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2b698339-7fd9-4354-a0ec-3269b64a6f3c"]
+  }],
+  "urls": ["http://127.0.0.1:5000/"],
+  "plugins": []
+}
