@@ -21,7 +21,7 @@ COMP0034 Code to accompany the lecture covering Flask testing
 1. Stop any running Flask app before starting the tests (as the Selenium tests run on the same port unless you change the config)
 2. Selenium should be installed, if not in the terminal for the venv of the project: 
 `pip install selenium`
-3. Download the browser driver https://sites.google.com/a/chromium.org/chromedriver/ (you MUST choose the version that matches your version of Chrome)
+3. Download the browser driver https://sites.google.com/a/chromium.org/chromedriver/ (you MUST choose the version that matches your version of Chrome) and save it to the `test` directory of this project
 4. Open `browser_tests.py`
 5. Run the tests (3 tests, should all pass)
 6. Add a new test to test the login is successful for an existing user (try: email="cs1234567@ucl.ac.uk", password="cs1234567”)
