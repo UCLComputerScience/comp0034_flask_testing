@@ -5,19 +5,12 @@
   "url": "http://127.0.0.1:5000",
   "tests": [{
     "id": "2b698339-7fd9-4354-a0ec-3269b64a6f3c",
-    "name": "test_signup",
+    "name": "test_signup_succeeds",
     "commands": [{
       "id": "fd956405-ef89-47f2-83e4-b92f6d72fbfc",
       "comment": "",
       "command": "open",
       "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8acce557-1253-4466-85ba-e3ec68e178d6",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1305x792",
       "targets": [],
       "value": ""
     }, {

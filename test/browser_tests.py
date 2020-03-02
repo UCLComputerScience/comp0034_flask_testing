@@ -138,7 +138,7 @@ class TestRegistration(TestBase):
 
     def test_login_succeeds_with_valid_user(self):
         """
-        Write a test that logins in a valid user with email="cs1234567@ucl.ac.uk" and password="cs1234567”
+        Write a test that logs in in a valid user with email="cs1234567@ucl.ac.uk" and password="cs1234567”
         """
 
 

@@ -4,6 +4,16 @@ COMP0034 Code to accompany the lecture covering Flask testing
 1. Create a venv
 2. Install the packages from requirements.txt (you may also need to add pytest)
 
+OR
+Add the following packages yourself:
+   - Flask-SQLAlchemy
+   - Flask-Testing
+   - Flask-WTF
+   - Flask-Login
+   - pytest
+   - selenium
+
+
 #### Note: Issues with packages following the release of Werkzeug 1.0.0
 The latest release of Werkzeug appears to have caused issues for a number of packages. 
 If you install the latest Werkzeug rather than 16.0.1 then you may get an error `ImportError: cannot import name 'cached_property' from 'werkzeug'` 
