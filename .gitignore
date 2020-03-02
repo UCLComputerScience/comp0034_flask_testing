@@ -131,5 +131,4 @@ dmypy.json
 .pyre/
 
 .idea/
-temp_code.py
-!/test/chromedriver
+/test/chromedriver

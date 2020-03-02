@@ -1,6 +1,16 @@
 # comp0034_flask_testing
 COMP0034 Code to accompany the lecture covering Flask testing
 
+1. Create a venv
+2. Install the packages from requirements.txt (you may also need to add pytest)
+
+####Note: Issues with packages following the release of Werkzeug 1.0.0
+The latest release of Werkzeug appears to have caused issues for a number of packages. 
+If you install the latest Werkzeug rather than 16.0.1 then you may get an error `ImportError: cannot import name 'cached_property' from 'werkzeug'` 
+when you try to run tests that use Flask-Testing. To address this make an edit to External Libraries/site-packages/flask-testing/utils.py line 35
+so that it reads `from werkzeug.utils import cached_property` instead of `from werkzeug import cached_property`.
+This is documented here: https://github.com/jarus/flask-testing/issues/143 
+
 ### Exercise 1: Unittest tests
 1. Open `test/backend_tests.py`
 2. Run the unittest tests and check all run

@@ -33,7 +33,7 @@ def test_profile_displayed_when_user_logged_in(test_client, user):
     assert b'Account type: Student' in response.data
 
 
-def test_view_profile_not_allowed_when_user_not_logged_in(self):
+def test_view_profile_not_allowed_when_user_not_logged_in(test_client):
         """
         Exercise: Write a test for the following case
         GIVEN a Flask application

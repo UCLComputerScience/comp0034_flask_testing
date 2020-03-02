@@ -136,11 +136,11 @@ class TestRegistration(TestBase):
         success_message = self.driver.find_element_by_class_name("alert-warning").text
         self.assertIn("Signup succeeded", success_message)
 
-
     def test_login_succeeds_with_valid_user(self):
         """
         Write a test that logins in a valid user with email="cs1234567@ucl.ac.uk" and password="cs1234567”
         """
+
 
 if __name__ == '__main__':
     unittest.main()
